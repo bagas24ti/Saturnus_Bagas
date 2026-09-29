@@ -24,15 +24,30 @@
         android:id="@+id/btnMasuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Masuk Pertemuan 4"
-        android:textStyle="bold |italic"
         android:backgroundTint="#BA35AD00"
+        android:text="Masuk Pertemuan 4"
         android:textSize="20sp"
+        android:textStyle="bold |italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintVertical_bias="0.566" />
+
+    <Button
+        android:id="@+id/btnMasukP5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BA006BAD"
+        android:text="Masuk Pertemuan 5"
+        android:textSize="20sp"
+        android:textStyle="bold |italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

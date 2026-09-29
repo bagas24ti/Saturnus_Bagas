@@ -10,7 +10,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.saturnus_bagas.databinding.ActivityMainBinding
 import com.example.saturnus_bagas.pertemuan_4.FourthActivity
+import com.example.saturnus_bagas.Pertemuan_5.FifthActivity
 import com.example.saturnus_bagas.MainActivity
+import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -36,6 +38,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
             Toast.makeText(this, "Berhasil berpindah ke FourthActivity", Toast.LENGTH_SHORT).show()
+        }
+        binding.btnMasukP5.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
+            finish()
+            Toast.makeText(this, "Berhasil berpindah ke FifthActivity", Toast.LENGTH_SHORT).show()
         }
     }
     override fun onStart() {
