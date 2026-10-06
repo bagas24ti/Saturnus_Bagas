@@ -11,7 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.saturnus_bagas.databinding.ActivityMainBinding
 import com.example.saturnus_bagas.pertemuan_4.FourthActivity
 import com.example.saturnus_bagas.Pertemuan_5.FifthActivity
-import com.example.saturnus_bagas.MainActivity
+import com.example.saturnus_bagas.AuthActivity
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        //Kode ini harus selalu dipanggil saat butuh akses "user_pref"
+        val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
+
         binding.btnMasuk.setOnClickListener {
             val intent = Intent(this, FourthActivity::class.java)
             intent.putExtra("name", "Politeknik Caltex Riau")
@@ -44,6 +48,26 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
             Toast.makeText(this, "Berhasil berpindah ke FifthActivity", Toast.LENGTH_SHORT).show()
+        }
+        binding.btnLogout.setOnClickListener {
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Konfirmasi")
+                .setMessage("Apakah Anda yakin ingin logout?")
+                .setPositiveButton("Ya") { dialog, _ ->
+                    // clear
+                    val editor = sharedPref.edit()
+                    editor.clear()
+                    editor.apply()
+                    dialog.dismiss()
+
+                    val intent = Intent(this, AuthActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                .setNegativeButton("Batal") { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .show()
         }
     }
     override fun onStart() {
