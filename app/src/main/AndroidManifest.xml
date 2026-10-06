@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Saturnus_Bagas">
         <activity
-            android:name=".AuthActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -44,6 +44,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
