@@ -25,14 +25,11 @@ class SplashScreenActivity : AppCompatActivity() {
         lifecycleScope.launch {
             delay(2000) // simulasi pengambilan data selama 2 detik
 
-            // 1. Ambil data session login dari SharedPreferences
             val sharedPref = getSharedPreferences("user_pref", Context.MODE_PRIVATE)
             val isLogin = sharedPref.getBoolean("isLogin", false)
 
-            // 2. Tentukan halaman tujuan berdasarkan status login
             if (isLogin) {
-                // Jika sudah login, langsung ke halaman utama
-                val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
+                val intent = Intent(this@SplashScreenActivity, BaseActivity::class.java)
                 startActivity(intent)
             } else {
                 // Jika belum login, arahkan ke halaman login (AuthActivity)

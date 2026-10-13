@@ -1,4 +1,4 @@
-package com.example.saturnus_bagas.Pertemuan2
+package com.example.saturnus_bagas.Home.Pertemuan2
 
 import android.os.Bundle
 import android.util.Log

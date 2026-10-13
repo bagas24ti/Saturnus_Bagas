@@ -24,22 +24,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Pertemuan3.ThirdActivity"
+            android:name=".Home.Pertemuan3.ThirdActivity"
             android:exported="false" />
         <activity
-            android:name=".Pertemuan2.SecondActivity"
+            android:name=".Home.Pertemuan2.SecondActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan_4.FourthActivity"
+            android:name=".Home.pertemuan_4.FourthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Pertemuan_5.FifthActivity"
+            android:name=".Home.Pertemuan_5.FifthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Pertemuan_5.WebViewActivity"
+            android:name=".Home.Pertemuan_5.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -48,6 +48,14 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".AuthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan_6.SixthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".BaseActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

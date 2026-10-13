@@ -1,9 +1,9 @@
-package com.example.saturnus_bagas.Pertemuan3
+package com.example.saturnus_bagas.Home.Pertemuan3
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import com.example.saturnus_bagas.pertemuan_4.FourthActivity
+import com.example.saturnus_bagas.Home.pertemuan_4.FourthActivity
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity

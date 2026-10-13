@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.saturnus_bagas.databinding.ActivityMainBinding
-import com.example.saturnus_bagas.pertemuan_4.FourthActivity
-import com.example.saturnus_bagas.Pertemuan_5.FifthActivity
-import com.example.saturnus_bagas.AuthActivity
+import com.example.saturnus_bagas.Home.pertemuan_4.FourthActivity
+import com.example.saturnus_bagas.Home.Pertemuan_5.FifthActivity
+import com.example.saturnus_bagas.Home.pertemuan_6.SixthActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlin.jvm.java
 
@@ -46,9 +46,14 @@ class MainActivity : AppCompatActivity() {
         binding.btnMasukP5.setOnClickListener {
             val intent = Intent(this, FifthActivity::class.java)
             startActivity(intent)
-            finish()
             Toast.makeText(this, "Berhasil berpindah ke FifthActivity", Toast.LENGTH_SHORT).show()
         }
+        binding.btnMasukP6.setOnClickListener {
+            val intent = Intent(this, SixthActivity::class.java)
+            startActivity(intent)
+            Toast.makeText(this, "Berhasil berpindah ke SixthhActivity", Toast.LENGTH_SHORT).show()
+        }
+
         binding.btnLogout.setOnClickListener {
             MaterialAlertDialogBuilder(this)
                 .setTitle("Konfirmasi")
@@ -62,7 +67,6 @@ class MainActivity : AppCompatActivity() {
 
                     val intent = Intent(this, AuthActivity::class.java)
                     startActivity(intent)
-                    finish()
                 }
                 .setNegativeButton("Batal") { dialog, _ ->
                     dialog.dismiss()
