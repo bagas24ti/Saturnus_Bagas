@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.saturnus_bagas.AuthActivity
+import com.example.saturnus_bagas.Home.Pertemuan_10.TenthActivity
 import com.example.saturnus_bagas.Home.Pertemuan_5.FifthActivity
 import com.example.saturnus_bagas.Home.pertemuan_4.FourthActivity
 import com.example.saturnus_bagas.Home.pertemuan_6.SixthActivity
@@ -58,6 +59,12 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), SixthActivity::class.java)
             startActivity(intent)
             Toast.makeText(requireContext(), "Berhasil berpindah ke SixthhActivity", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.btnToTenth.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+            Toast.makeText(requireContext(), "Berhasil berpindah ke TenthActivity", Toast.LENGTH_SHORT).show()
         }
 
         binding.btnLogout.setOnClickListener {
