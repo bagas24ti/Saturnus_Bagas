@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:text="Konten Tab B"
         android:textSize="40sp"
-        android:textStyle="bold "
+        android:textStyle="bold"
         android:textColor="#3B1BED" />
 
 </FrameLayout>
