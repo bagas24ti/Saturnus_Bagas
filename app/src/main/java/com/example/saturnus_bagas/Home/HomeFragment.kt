@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.saturnus_bagas.AuthActivity
 import com.example.saturnus_bagas.Home.Pertemuan_10.TenthActivity
 import com.example.saturnus_bagas.Home.Pertemuan_5.FifthActivity
+import com.example.saturnus_bagas.Home.pertemuan_11.EleventhActivity
 import com.example.saturnus_bagas.Home.pertemuan_4.FourthActivity
 import com.example.saturnus_bagas.Home.pertemuan_6.SixthActivity
 import com.example.saturnus_bagas.R
@@ -63,6 +64,12 @@ class HomeFragment : Fragment() {
 
         binding.btnToTenth.setOnClickListener {
             val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+            Toast.makeText(requireContext(), "Berhasil berpindah ke TenthActivity", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.btnToElevent.setOnClickListener {
+            val intent = Intent(requireContext(), EleventhActivity::class.java)
             startActivity(intent)
             Toast.makeText(requireContext(), "Berhasil berpindah ke TenthActivity", Toast.LENGTH_SHORT).show()
         }
