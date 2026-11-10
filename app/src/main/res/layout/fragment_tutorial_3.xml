@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E88E5"
+    android:padding="24dp"
+    tools:context=".Message.Tutorial.Tutorial3Fragment">
+
+    <!-- Gambar / Ilustrasi Utama -->
+    <ImageView
+        android:id="@+id/imgTutorial3"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="Ilustrasi Keamanan Pesan"
+        android:src="@drawable/ic_info"
+        app:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Judul Informasi -->
+    <TextView
+        android:id="@+id/tvTitleTutorial3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Notifikasi &amp; Keamanan"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgTutorial3" />
+
+    <!-- Deskripsi Singkat -->
+    <TextView
+        android:id="@+id/tvDescTutorial3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="Dapatkan pemberitahuan pesan baru secara otomatis dan jaga privasi obrolan Anda tetap aman."
+        android:textColor="#E0E0E0"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleTutorial3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
