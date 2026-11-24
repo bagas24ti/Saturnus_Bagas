@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.saturnus_bagas.Home.HomeFragment
 import com.example.saturnus_bagas.Message.MessageFragment
 import com.example.saturnus_bagas.More.MoreFragment
+import com.example.saturnus_bagas.Note.NoteFragment
 import com.example.saturnus_bagas.databinding.ActivityBaseBinding
 import com.example.saturnus_bagas.databinding.ActivitySixthBinding
 
@@ -43,6 +44,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 R.id.more -> {
                     replaceFragment(MoreFragment())
+                    true
+                }
+                R.id.note -> {
+                    replaceFragment(NoteFragment())
                     true
                 }
                 else -> false // return false jika item tidak ada yang di klik
